@@ -6,7 +6,7 @@
 
 https://benjaminlee24.github.io/gang-ds-blog/
 
-# My Blog
+# Ben's Blog
 
 
 _powered by [fastpages](https://github.com/fastai/fastpages)_
