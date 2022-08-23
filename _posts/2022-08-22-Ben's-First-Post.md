@@ -16,3 +16,7 @@ Here's a list of my favorite basketball players:
 1. Kobe Bryant
 2. Jordan Poole
 3. Micheal Jordan
+
+## Images
+
+![]({{ site.baseurl }}/images/Kobe comp sci.jpeg "fast.ai's logo")
