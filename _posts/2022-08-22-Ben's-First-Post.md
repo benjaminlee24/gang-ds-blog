@@ -19,4 +19,4 @@ Here's a list of my favorite basketball players:
 
 ## Images
 
-![]({{ site.baseurl }}/images/Kobe comp sci.jpeg "fast.ai's logo")
+![]({{ site.baseurl }}/images/Kobe.jpeg "fast.ai's logo")
