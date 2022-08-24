@@ -14,7 +14,7 @@
     
         ,"post1": {
             "title": "Ben's First Notebook",
-            "content": "print(&quot;Hello my name is Ben Lee and I play basketball&quot;) . Hello my name is Ben Lee and I play basketball .",
+            "content": "print(&quot;hello world&quot;) . hello world . print(&quot;Hello my name is Ben Lee and I play basketball&quot;) . Hello my name is Ben Lee and I play basketball .",
             "url": "https://benjaminlee24.github.io/gang-ds-blog/jupyter/2022/08/22/Ben's-First-Notebook.html",
             "relUrl": "/jupyter/2022/08/22/Ben's-First-Notebook.html",
             "date": " • Aug 22, 2022"
