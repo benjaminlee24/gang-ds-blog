@@ -153,8 +153,8 @@ window.onload = wrap_img;
 <span class="n">correct</span> <span class="o">=</span> <span class="mi">0</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="s1">'Hello, '</span> <span class="o">+</span> <span class="n">getpass</span><span class="o">.</span><span class="n">getuser</span><span class="p">()</span> <span class="o">+</span> <span class="s2">" running "</span> <span class="o">+</span> <span class="n">sys</span><span class="o">.</span><span class="n">executable</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"You will be asked "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">questions</span><span class="p">)</span> <span class="o">+</span> <span class="s2">" questions."</span><span class="p">)</span>
-<span class="n">question_with_response</span><span class="p">(</span><span class="s2">"Are you ready to take a test?"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"You are going to take a "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">questions</span><span class="p">)</span> <span class="o">+</span> <span class="s2">" question quiz."</span><span class="p">)</span>
+<span class="n">question_with_response</span><span class="p">(</span><span class="s2">"Are you ready to take a quiz about media?"</span><span class="p">)</span>
 
 <span class="n">rsp</span> <span class="o">=</span> <span class="n">question_with_response</span><span class="p">(</span><span class="s2">"What is the oldest form of media?"</span><span class="p">)</span>
 <span class="k">if</span> <span class="n">rsp</span> <span class="o">==</span> <span class="s2">"print"</span><span class="p">:</span>
@@ -191,8 +191,8 @@ window.onload = wrap_img;
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Hello, benjaminlee running /Library/Developer/CommandLineTools/usr/bin/python3
-You will be asked 3 questions.
-Question: Are you ready to take a test?
+You are going to take a 3 question quiz.
+Question: Are you ready to take a quiz about media?
 Question: What is the oldest form of media?
 print is correct!
 Question: Which form revolutionized media?
