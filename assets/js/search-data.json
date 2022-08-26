@@ -52,10 +52,10 @@
 
   
       ,"page2": {
-          "title": "About Me",
-          "content": "This website is powered by fastpages 1. . a blogging platform that natively supports Jupyter notebooks in addition to other formats. &#8617; . |",
-          "url": "https://benjaminlee24.github.io/gang-ds-blog/about/",
-          "relUrl": "/about/",
+          "title": "notes",
+          "content": "https://benjaminlee24.github.io/gang-ds-blog/2022/08/26/Ben’s-AP-Government-Work.html .",
+          "url": "https://benjaminlee24.github.io/gang-ds-blog/notes/",
+          "relUrl": "/notes/",
           "date": ""
       }
       
@@ -63,10 +63,10 @@
 
   
       ,"page3": {
-          "title": "notes",
-          "content": "https://benjaminlee24.github.io/gang-ds-blog/2022/08/26/Ben’s-AP-Government-Work.html .",
-          "url": "https://benjaminlee24.github.io/gang-ds-blog/notes/",
-          "relUrl": "/notes/",
+          "title": "About Me",
+          "content": "This website is powered by fastpages 1. . a blogging platform that natively supports Jupyter notebooks in addition to other formats. &#8617; . |",
+          "url": "https://benjaminlee24.github.io/gang-ds-blog/about/",
+          "relUrl": "/about/",
           "date": ""
       }
       
