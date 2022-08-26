@@ -2,6 +2,17 @@
   
     
         "post0": {
+            "title": "Ben's Gov Quiz",
+            "content": "import getpass, sys def question_with_response(prompt): print(&quot;Question: &quot; + prompt) msg = input() return msg questions = 3 correct = 0 print(&#39;Hello, &#39; + getpass.getuser() + &quot; running &quot; + sys.executable) print(&quot;You will be asked &quot; + str(questions) + &quot; questions.&quot;) question_with_response(&quot;Are you ready to take a test?&quot;) rsp = question_with_response(&quot;What is the oldest form of media?&quot;) if rsp == &quot;print&quot;: print(rsp + &quot; is correct!&quot;) correct += 1 else: print(rsp + &quot; is incorrect!&quot;) rsp = question_with_response(&quot;Which form revolutionized media?&quot;) if rsp == &quot;internet&quot;: print(rsp + &quot; is correct!&quot;) correct += 1 else: print(rsp + &quot; is incorrect!&quot;) rsp = question_with_response(&quot;What role of the media is responsible for controlling what media goes out?&quot;) if rsp == &quot;gatekeeper&quot;: print(rsp + &quot; is correct!&quot;) correct += 1 else: print(rsp + &quot; is incorrect!&quot;) print(getpass.getuser() + &quot; you scored &quot; + str(correct) +&quot;/&quot; + str(questions)) . Hello, benjaminlee running /Library/Developer/CommandLineTools/usr/bin/python3 You will be asked 3 questions. Question: Are you ready to take a test? Question: What is the oldest form of media? print is correct! Question: Which form revolutionized media? internet is correct! Question: What role of the media is responsible for controlling what media goes out? internet is incorrect! benjaminlee you scored 2/3 .",
+            "url": "https://benjaminlee24.github.io/gang-ds-blog/jupyter/2022/08/26/Ben's-Quiz.html",
+            "relUrl": "/jupyter/2022/08/26/Ben's-Quiz.html",
+            "date": " • Aug 26, 2022"
+        }
+        
+    
+  
+    
+        ,"post1": {
             "title": "Ben's Ap Government Work",
             "content": "Benjamin Lee . Dupas . AP Gov . 23 August 2022 . Different media examples . Print media was in the forms of newspapers, magazines, and journals. . Also the oldest form and example of media . | Not doing as well today but is still a daily source of media . | Very important and not dead because it does many different reports that the TV copies . | Does different unique things that the other media examples don’t . | People who still read this type of media are more likely to be politically active . | Popular examples consist of LA Times, WAPO, and NYT . | . | Broadcast media (TV or radio) . Majority get from TV . | ABC, CBS, NBS, Fox . | Radio was made before TV, commuter news . | Bigger audiences in local news . | . | Talk Radio . 1980s, biased interviews . | Liberals didn’t succeed in this form of media . | Podcast is similar but is mostly scripted (Liberals having more success in this form) . | . | Internet . Revolutionized media . | Is very reliable . | Can produce false news and very opinionated stories . | . | . | How does it work? . Profit . Is made through the profits that it makes . | Rely majorly on funds from advertising revenue . | . | Conglomerates . Transfer vertically to become larger . | Disney, Time Warner, etc. . | . | Professional Code of Ethics . Be trustworthy, have accurate information, objectivity, fair, and take accountability for their actions . | Can be wrong but helped to correct . | Always use sources that are reliable that is accurate . | Make sources anonymous . | . | . | Sources . “On-the-record” . Everything said can be used and quoted, and published including your name . | . | “On background” . Can be quoted but no name attached to it . | . | “On deep background” . No quoting, location, or name used . | Only info that could be used had to be paraphrased . | . | “Off the record” . Nothing can be used . | Just research . | . | . | Roles of the Media . Gatekeeper . Keeps information away from the public . | Controls what goes out . | . | Watchdog . National media’s job to spy on politics and their behaviors . | Uncover scandals . | . | Score Keeper . Create reputations for politics . | Assist choosing winners and losers . | . | Agenda Setter . Controls the topics displayed to the public . | Shows things important to the public . | Makes government address them . | Decides what to focus on the most and display it . | Things that aren’t as important as kinda dropped off . | . | . | .",
             "url": "https://benjaminlee24.github.io/gang-ds-blog/2022/08/26/Ben's-AP-Government-Work.html",
@@ -12,7 +23,7 @@
     
   
     
-        ,"post1": {
+        ,"post2": {
             "title": "Ben's First Post",
             "content": "Ben’s First Post . About Me . Hello, my name is Benjamin Lee. I am a senior at Del Norte High School and I play basketball. My favorite subjects in school are math and science. Computer science is very interesting to me. . I know how to write in bold, and also in italics Here’s a list of my favorite basketball players: . Kobe Bryant | Jordan Poole | Micheal Jordan |",
             "url": "https://benjaminlee24.github.io/gang-ds-blog/markdown/2022/08/22/Ben's-First-Post.html",
@@ -23,7 +34,7 @@
     
   
     
-        ,"post2": {
+        ,"post3": {
             "title": "Ben's First Notebook",
             "content": "print(&quot;hello world&quot;) . hello world . print(&quot;Hello my name is Ben Lee and I play basketball&quot;) . Hello my name is Ben Lee and I play basketball .",
             "url": "https://benjaminlee24.github.io/gang-ds-blog/jupyter/2022/08/22/Ben's-First-Notebook.html",
