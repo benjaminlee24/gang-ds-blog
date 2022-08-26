@@ -62,6 +62,17 @@
   
 
   
+      ,"page3": {
+          "title": "notes",
+          "content": "https://benjaminlee24.github.io/gang-ds-blog/2022/08/26/Ben’s-AP-Government-Work.html .",
+          "url": "https://benjaminlee24.github.io/gang-ds-blog/notes/",
+          "relUrl": "/notes/",
+          "date": ""
+      }
+      
+  
+
+  
 
   
 
@@ -81,7 +92,7 @@
   
 
   
-      ,"page10": {
+      ,"page11": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "https://benjaminlee24.github.io/gang-ds-blog/robots.txt",
