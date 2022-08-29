@@ -4,8 +4,4 @@ title: About Me
 permalink: /about/
 ---
 
-This website is powered by **[fastpages](https://github.com/fastai/fastpages)** [^1].
-
-
-
-[^1]:a blogging platform that natively supports Jupyter notebooks in addition to other formats.
+This is my **[about me](https://benjaminlee24.github.io/gang-ds-blog/markdown/2022/08/22/Ben's-First-Post.html)**
