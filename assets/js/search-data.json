@@ -85,6 +85,17 @@
 
   
       ,"page3": {
+          "title": "Vocabulary",
+          "content": "Table with vocab .",
+          "url": "https://benjaminlee24.github.io/gang-ds-blog/Vocabulary/",
+          "relUrl": "/Vocabulary/",
+          "date": ""
+      }
+      
+  
+
+  
+      ,"page4": {
           "title": "About Me",
           "content": "This is my about me .",
           "url": "https://benjaminlee24.github.io/gang-ds-blog/about/",
@@ -114,7 +125,7 @@
   
 
   
-      ,"page11": {
+      ,"page12": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "https://benjaminlee24.github.io/gang-ds-blog/robots.txt",
