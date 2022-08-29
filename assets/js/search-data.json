@@ -86,7 +86,7 @@
   
       ,"page3": {
           "title": "Vocabulary",
-          "content": "Vocab Explanation . Sequence | More than one line of code | .",
+          "content": "Vocab Explanation . Sequence | More than one line of code | . Static Text | Text that doesn’t change | . Input | Code that is inserted by the user | . Output | The response the computer generates from the input | .",
           "url": "https://benjaminlee24.github.io/gang-ds-blog/Vocabulary/",
           "relUrl": "/Vocabulary/",
           "date": ""
