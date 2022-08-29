@@ -4,4 +4,6 @@ title: Vocabulary
 permalink: /Vocabulary/
 ---
 
-Table with vocab
+| Vocab     | Explanation |
+| ---------- | ---------- |
+| Sequence  | More than one line of code |
