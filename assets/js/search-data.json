@@ -14,7 +14,7 @@
     
         ,"post1": {
             "title": "Change Background Color",
-            "content": ".",
+            "content": ". I had no problems when changing the color of my background. I got some help from a friend who helped me find the code and I put that code in my sass / minima. Then I opened an rgb color picker to find the color that I wanted and I put that color in the code. .",
             "url": "https://benjaminlee24.github.io/gang-ds-blog/markdown/2022/09/02/Change-Background-Color.html",
             "relUrl": "/markdown/2022/09/02/Change-Background-Color.html",
             "date": " • Sep 2, 2022"
