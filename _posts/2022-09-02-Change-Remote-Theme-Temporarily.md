@@ -2,7 +2,7 @@
 toc: true
 layout: post
 description: Temporary change
-categories: [markdown]
+categories: [Week 2]
 title: Changing Remote Theme Temporarily
 ---
 
