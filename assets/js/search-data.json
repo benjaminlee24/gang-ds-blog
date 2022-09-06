@@ -118,6 +118,17 @@
 
   
       ,"page4": {
+          "title": "Weekly Schedule",
+          "content": "Period Class . 1 | Advanced Basketball | . 2 | Introduction to Finance | . 3 | Expository Reading and Writing | . 4 | AP Computer Science Principles | . 5 | AP Government and Politics | .",
+          "url": "https://benjaminlee24.github.io/gang-ds-blog/Weekly%20Schedule/",
+          "relUrl": "/Weekly Schedule/",
+          "date": ""
+      }
+      
+  
+
+  
+      ,"page5": {
           "title": "About Me",
           "content": "This is my about me .",
           "url": "https://benjaminlee24.github.io/gang-ds-blog/about/",
@@ -147,7 +158,7 @@
   
 
   
-      ,"page12": {
+      ,"page13": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "https://benjaminlee24.github.io/gang-ds-blog/robots.txt",
