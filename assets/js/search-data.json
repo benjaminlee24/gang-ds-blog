@@ -172,7 +172,9 @@
   
 
   
-      ,"page5": {
+
+  
+      ,"page6": {
           "title": "About Me",
           "content": "This is my about me .",
           "url": "https://benjaminlee24.github.io/gang-ds-blog/about/",
@@ -202,7 +204,7 @@
   
 
   
-      ,"page13": {
+      ,"page14": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "https://benjaminlee24.github.io/gang-ds-blog/robots.txt",
