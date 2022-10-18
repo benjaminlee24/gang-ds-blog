@@ -75,3 +75,6 @@ title: AP Prep Multiple Choice
 - Documentation improves: programming process efficiency, ability to test and refine program, responding to bugs
 
 ![]({{site.baseurl}}/images/Screen Shot 2022-10-03 at 1.07.19 PM.png "1.3")
+
+## 1.4 Copy of Identifying and Correcting Errors Quiz
+![]({{site.baseurl}}/images/Screen Shot 2022-10-18 at 1.20.01 PM.png "1.4")
