@@ -19,6 +19,7 @@ title: Qualcomm Blog
 - Isn’t always work, they also do fun activities
 - Doing your research to see what each type does and what is interesting to you
 - Very hard to balance work and home life
+
 Reflection from Suma: Engineering is very important to the world and there are many different engineering options for people to explore. If you want to go into engineering, you should always learn about all of the options to see which one is best for you and then focus on it. Since she is doing what she is interested in, work for her is very fun. However, when she had kids, it was very hard for her to balance work and home life but with time, it got easier for her.
 
 # Nisha Sethia
@@ -36,4 +37,5 @@ Reflection from Suma: Engineering is very important to the world and there are m
     - Software engineer/designer
 - Growth mindset for choosing which engineering to pursue, whatever one is interested in after research
 - Wishes she got more exposure to different things such as programming - also her biggest challenge
+
 Reflection from Nisha: One doesn’t need to know much about engineering to start, but you need to have your interest before diving deep into it. Always keep an open mind and a growth mindset when choosing which engineering career to pursue because some aren’t for everyone. She wanted to break barriers and trailblaze her career from nothing to something, and that nobody in her family has done. She shows that anything is possible if you work hard and love what you do.
