@@ -76,5 +76,27 @@ title: AP Prep Multiple Choice
 
 ![]({{site.baseurl}}/images/Screen Shot 2022-10-03 at 1.07.19 PM.png "1.3")
 
-## 1.4 Copy of Identifying and Correcting Errors Quiz
+## 1.4 Copy of Identifying and Correcting Errors Notes
+
+## Daily Video 1 
+- identify an error
+- a logic error is a mistake in the algorithm or program that causes it to behave incorrectly or unexpectedly
+- a syntax error is a mistake in the program where the rules of the programming language are not followed
+- a run time error is a mistake in the program that occurs during the execution of the program. Programming language define their own runtime errors
+- A overflow error is an error that occurs when a computer attempts to handle a number that is outside of the defined range of values
+## Daily Video 2
+- correct the error
+- The following are effective ways to find and correct errors
+    - tests cases
+    - hand tracing
+    - visualizations
+    - debuggers
+    - adding extra output statements
+## Daily Video 3
+- Identify inputs and corresponding expected outputs or behaviors that can be used to check the correctness of an algorithm or program
+- In the development process, testing uses defined inputs to ensure that an algorithm or program is producing the expected outcomes
+    - Programmers use the results from testing to revise their algorithms or programs
+- Defined inputs used to test a program should demonstrate the different expected outcomes that are at or just beyond the extremes of input data
+- Program requirements are needed to identify appropriate defined inputs for testing
+
 ![]({{site.baseurl}}/images/Screen Shot 2022-10-18 at 1.20.01 PM.png "1.4")
