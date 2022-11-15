@@ -1,1 +1,7 @@
-
+# Ignore from local build
+settings.ini
+Gemfile.lock
+images/copied_from_nb/
+_post/2022-10-03-AP-error_testing.md
+_post/2022-10-03-PBL-python_rapidapi.md
+_post/2022-10-17-PBL-webapi_tutorial.md
