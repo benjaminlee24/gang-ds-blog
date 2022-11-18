@@ -37,10 +37,6 @@ url: "https://benjaminlee24.github.io" # the base hostname & protocol for your s
 baseurl: "/gang-ds-blog" # the subpath of your site, e.g. "/blog".
 
 # Github and twitter are optional:
-minima:
-  social_links:
-    instagram: benjaminlee.24
-    github: benjaminlee24
 
 # Set this to true to get LaTeX math equation support
 use_math: 
