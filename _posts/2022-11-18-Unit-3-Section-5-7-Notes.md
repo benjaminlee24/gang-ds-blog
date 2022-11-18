@@ -1,9 +1,9 @@
 ---
 toc: true
 layout: post
-description: Unit 3 Section 5-7 Notes
+description: Lesson Planning
 categories: [Week 13]
-title: Unit 3 Section 5-7 Notes
+title: Lesson Planning
 ---
 
 # Unit 3 Notes
