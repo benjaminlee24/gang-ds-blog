@@ -35,3 +35,6 @@ permalink: /Vocabulary/
 | sequencing | outline or set of steps that we do and follow in order that they are given
 | variable | you can store an actual value, the value of a variable in another variable, the result of an operation, or result of a procedural call
 | String | a sequence of characters
+| Algorithm | A process or set of rules to be followed in calculations or other problem solving operations, especially by a computer.
+| Iteration | Repeating steps, or instructions over and over again. ( this could be also often called a loop )
+| Selection | is a decision or question. At some point in an algorithm there may need to be a question because the algorithm has reached a step where one or more options are available.
