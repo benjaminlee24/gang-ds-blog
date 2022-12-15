@@ -38,3 +38,6 @@ permalink: /Vocabulary/
 | Algorithm | A process or set of rules to be followed in calculations or other problem solving operations, especially by a computer.
 | Iteration | Repeating steps, or instructions over and over again. ( this could be also often called a loop )
 | Selection | is a decision or question. At some point in an algorithm there may need to be a question because the algorithm has reached a step where one or more options are available.
+| Documentation | Text that explains the what, how, or why of your code.
+| Libraries | A collection of pre written code or procedures that coders can use to maximize their efficiency
+| Application Programming Interface| A type of software through several computers are able to communicate information amongst each other
