@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Unit 3 Section 8 and 10 Blog | Ben Lee’s Comp Sci Principles Blog</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="Unit 3 Section 8 and 10 Blog" />
+<meta name="author" content="Ben Lee" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Unit 3 Section 8 and 10" />
+<meta property="og:description" content="Unit 3 Section 8 and 10" />
+<link rel="canonical" href="https://benjaminlee24.github.io/gang-ds-blog/week%2015/2022/12/14/Unit-3-Sections-14-and-156.html" />
+<meta property="og:url" content="https://benjaminlee24.github.io/gang-ds-blog/week%2015/2022/12/14/Unit-3-Sections-14-and-156.html" />
+<meta property="og:site_name" content="Ben Lee’s Comp Sci Principles Blog" />
+<meta property="og:image" content="https://benjaminlee24.github.io/gang-ds-blog/images/chart-preview.png" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2022-12-14T00:00:00-06:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:image" content="https://benjaminlee24.github.io/gang-ds-blog/images/chart-preview.png" />
+<meta property="twitter:title" content="Unit 3 Section 8 and 10 Blog" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Ben Lee"},"dateModified":"2022-12-14T00:00:00-06:00","datePublished":"2022-12-14T00:00:00-06:00","description":"Unit 3 Section 8 and 10","headline":"Unit 3 Section 8 and 10 Blog","image":"https://benjaminlee24.github.io/gang-ds-blog/images/chart-preview.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://benjaminlee24.github.io/gang-ds-blog/week%2015/2022/12/14/Unit-3-Sections-14-and-156.html"},"url":"https://benjaminlee24.github.io/gang-ds-blog/week%2015/2022/12/14/Unit-3-Sections-14-and-156.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/gang-ds-blog/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://benjaminlee24.github.io/gang-ds-blog/feed.xml" title="Ben Lee's Comp Sci Principles Blog" /><link rel="shortcut icon" type="image/x-icon" href="/gang-ds-blog/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+
+<script>
+function wrap_img(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+        var elements = document.querySelectorAll(".post img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("title") && (el.className != "emoji")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("title"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+    } else { document.addEventListener('DOMContentLoaded', fn); }
+}
+window.onload = wrap_img;
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+    // add link icon to anchor tags
+    var elem = document.querySelectorAll(".anchor-link")
+    elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
+    });
+</script>
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/gang-ds-blog/">Ben Lee&#39;s Comp Sci Principles Blog</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/gang-ds-blog/search/">Search</a><a class="page-link" href="/gang-ds-blog/categories/">Tags</a><a class="page-link" href="/gang-ds-blog/Notes/">Notes</a><a class="page-link" href="/gang-ds-blog/Vocabulary/">Vocabulary</a><a class="page-link" href="/gang-ds-blog/Weekly%20Schedule/">Weekly Schedule</a><a class="page-link" href="/gang-ds-blog/Submenu/">Submenu</a><a class="page-link" href="/gang-ds-blog/about/">About Me</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Unit 3 Section 8 and 10 Blog</h1><p class="page-description">Unit 3 Section 8 and 10</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2022-12-14T00:00:00-06:00" itemprop="datePublished">
+        Dec 14, 2022
+      </time>• 
+          <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <span class="p-author h-card" itemprop="name">Ben Lee</span></span>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      5 min read
+    
+</span></p>
+
+    
+      <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
+      
+        <a class="category-tags-link" href="/gang-ds-blog/categories/#Week 15">Week 15</a>
+        
+      
+      </p>
+    
+
+    
+      
+        <div class="pb-5 d-flex flex-justify-center">
+          <div class="px-2">
+
+    <a href="https://github.com/benjaminlee24/gang-ds-blog/tree/master/_notebooks/2022-12-14-Unit-3-Sections-14-and-156.ipynb" role="button" target="_blank">
+<img class="notebook-badge-image" src="/gang-ds-blog/assets/badges/github.svg" alt="View On GitHub">
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://mybinder.org/v2/gh/benjaminlee24/gang-ds-blog/master?filepath=_notebooks%2F2022-12-14-Unit-3-Sections-14-and-156.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/gang-ds-blog/assets/badges/binder.svg" alt="Open In Binder"/>
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://colab.research.google.com/github/benjaminlee24/gang-ds-blog/blob/master/_notebooks/2022-12-14-Unit-3-Sections-14-and-156.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/gang-ds-blog/assets/badges/colab.svg" alt="Open In Colab"/>
+    </a>
+</div>
+          <div class="px-2">
+  <a href="https://deepnote.com/launch?url=https%3A%2F%2Fgithub.com%2Fbenjaminlee24%2Fgang-ds-blog%2Fblob%2Fmaster%2F_notebooks%2F2022-12-14-Unit-3-Sections-14-and-156.ipynb" target="_blank">
+      <img class="notebook-badge-image" src="/gang-ds-blog/assets/badges/deepnote.svg" alt="Launch in Deepnote"/>
+  </a>
+</div>
+
+        </div>
+      </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <ul id="toc" class="section-nav">
+<li class="toc-entry toc-h1"><a href="#Reflection">Reflection </a></li>
+<li class="toc-entry toc-h1"><a href="#Notes">Notes </a></li>
+<li class="toc-entry toc-h1"><a href="#MC">MC </a></li>
+<li class="toc-entry toc-h1"><a href="#Short-Answer-Questions">Short Answer Questions </a>
+<ul>
+<li class="toc-entry toc-h2"><a href="#1">1 </a></li>
+<li class="toc-entry toc-h2"><a href="#2">2 </a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h1"><a href="#Code">Code </a></li>
+</ul><!--
+#################################################
+### THIS FILE WAS AUTOGENERATED! DO NOT EDIT! ###
+#################################################
+# file to edit: _notebooks/2022-12-14-Unit-3-Sections-14-and-156.ipynb
+-->
+
+<div class="container" id="notebook-container">
+        
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Reflection">
+<a class="anchor" href="#Reflection" aria-hidden="true"><span class="octicon octicon-link"></span></a>Reflection<a class="anchor-link" href="#Reflection"> </a>
+</h1>
+<p>I gained knowledge about APIs, libraries, and documentation. The AP Exam project portion includes documentation, which entails describing what and how your code does its thing. Because libraries are pre-written and you can reference them throughout your code, they serve to make coding more effective. In programs, randomization can be quite helpful. Many of the programs that we use, such games and webpages, use randomization.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Notes">
+<a class="anchor" href="#Notes" aria-hidden="true"><span class="octicon octicon-link"></span></a>Notes<a class="anchor-link" href="#Notes"> </a>
+</h1>
+<ul>
+<li>
+<p>Procedures found in software libraries are utilized to create new programs.</p>
+</li>
+<li>
+<p>The creation of algorithms can be greatly simplified by libraries and prewritten code.</p>
+</li>
+<li>
+<p>Libraries make complex programs simpler.</p>
+</li>
+<li>
+<p>Application program interfaces (APIs) define how library procedures should act and be used.</p>
+</li>
+<li>
+<p>Reading the documentation makes it much simpler to understand how to use libraries and APIs.</p>
+</li>
+<li>
+<p>Among the helpful random functions are:</p>
+<ul>
+<li>
+<p>Creates a random number using random.randint(a, b). As the start and finish values, a and b's values are necessary in order to set an inclusive limit on the number that can be generated. The optional step C determines the interval at which random numbers are created.</p>
+</li>
+<li>
+<p>A random integer is produced using the function random.randrange(a, b, c). As the start and finish values, a and b's values are necessary in order to set an inclusive limit on the number that can be generated. The step that explains the type of multiple that can be formed is C. The potential value is less than b and begins at an or is a multiple of c plus a multiple of a.</p>
+</li>
+<li>
+<p>The function random.shuffle randomly shuffles a list's contents.</p>
+</li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="MC">
+<a class="anchor" href="#MC" aria-hidden="true"><span class="octicon octicon-link"></span></a>MC<a class="anchor-link" href="#MC"> </a>
+</h1>
+<ol>
+<li>What does the random(a,b) function generate?</li>
+</ol>
+<p>A. A random integer from a to be exclusive
+B. A random integer from a to b inclusive.
+C. A random word from variable a to variable b exclusive.
+D. A random word from variable a to variable b inclusive.</p>
+<p>Answer: B, since it contains the endpoints and all of those intermediate numbers</p>
+<ol>
+<li>What is x, y, and z in random.randrange(x, y, z)?</li>
+</ol>
+<p>A. x = start, y = stop, z = step
+B. x = start, y = step, z = stop
+C. x = stop, y = start, z = step
+D. x = step, y = start, z = stop</p>
+<p>Answer: A, the order is start, stop, step</p>
+<ol>
+<li>Which of the following is NOT part of the random library?</li>
+</ol>
+<p>A. random.item
+B. random.random
+C. random.shuffle
+D. random.randint</p>
+<p>Answer: A, the item random.item doesn't exist. Using random.random, a float between 0 and 1 is produced. The function random.shuffle randomly arranges a list. A random integer is produced using random.randint.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Short-Answer-Questions">
+<a class="anchor" href="#Short-Answer-Questions" aria-hidden="true"><span class="octicon octicon-link"></span></a>Short Answer Questions<a class="anchor-link" href="#Short-Answer-Questions"> </a>
+</h1>
+<h2 id="1">
+<a class="anchor" href="#1" aria-hidden="true"><span class="octicon octicon-link"></span></a>1<a class="anchor-link" href="#1"> </a>
+</h2>
+<p>Users can access and reuse pre-written code by using libraries. This enables the improvement of algorithms' efficiency. Additionally, there are numerous libraries that are developed for a variety of applications, which makes it simpler for programmers to construct algorithms with greater complexity.</p>
+<h2 id="2">
+<a class="anchor" href="#2" aria-hidden="true"><span class="octicon octicon-link"></span></a>2<a class="anchor-link" href="#2"> </a>
+</h2>
+<p>The first line of code imports the random library. The software then gathers names from user input and compiles them into a list (names). The number of items in the list is then determined by the variable num items. Using a random number generator, the random choice variable creates an index for the list. The random.randint function is used by random choice to provide a value from 0 to the maximum index (length of list minus 1). Then the software identifies the individual who is connected to the value that was generated at random. The name of that person is then printed by the application.</p>
+<p>Documentation: I assign the variable names string to the names the user enters using the random function in the library. The names will be separated using commas by the split function. Each name will be assigned a number by num items, which will then use the random function randint to choose a random number for each name. The procedure then returns the text and the name.</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">random</span> 
+
+<span class="n">names_string</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Give me everybody's names, seperated by a comma."</span><span class="p">)</span>
+<span class="n">names</span> <span class="o">=</span> <span class="n">names_string</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">","</span><span class="p">)</span>
+
+<span class="n">num_items</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">names</span><span class="p">)</span>
+
+<span class="n">random_choice</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">num_items</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span>
+
+<span class="n">person_who_will_pay</span> <span class="o">=</span> <span class="n">names</span><span class="p">[</span><span class="n">random_choice</span><span class="p">]</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">person_who_will_pay</span><span class="si">}</span><span class="s2"> is going to buy the meal today!"</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Riggi is going to buy the meal today!
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Code">
+<a class="anchor" href="#Code" aria-hidden="true"><span class="octicon octicon-link"></span></a>Code<a class="anchor-link" href="#Code"> </a>
+</h1>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">random</span>
+
+<span class="n">names_list</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"Riggi"</span><span class="p">,</span> <span class="s2">"Nico"</span><span class="p">,</span> <span class="s2">"Drew"</span><span class="p">,</span> <span class="s2">"Avery"</span><span class="p">,</span> <span class="s2">"Jack"</span><span class="p">,</span> <span class="s2">"Jaden"</span><span class="p">,</span> <span class="s2">"Dean"</span><span class="p">,</span> <span class="s2">"Cole"</span><span class="p">,</span> <span class="s2">"Zion"</span><span class="p">,</span> <span class="s2">"Hayden"</span><span class="p">,</span> <span class="s2">"Nate"</span><span class="p">,</span> <span class="s2">"Ryder"</span><span class="p">,</span> <span class="s2">"Connor"</span><span class="p">,</span> <span class="s2">"Ash"</span><span class="p">,</span> <span class="s2">"Sanburg"</span><span class="p">,</span> <span class="s2">"Ron Jay"</span><span class="p">]</span>
+<span class="n">random_list</span> <span class="o">=</span> <span class="p">[]</span>
+
+<span class="k">def</span> <span class="nf">addPeople</span><span class="p">(</span><span class="nb">list</span><span class="p">,</span> <span class="n">new_list</span><span class="p">):</span>
+    <span class="n">count</span> <span class="o">=</span> <span class="mi">1</span>
+    <span class="k">while</span> <span class="n">count</span> <span class="o">&lt;=</span> <span class="mi">5</span><span class="p">:</span>
+        <span class="n">number</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="nb">list</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span>
+        <span class="n">new_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">list</span><span class="p">[</span><span class="n">number</span><span class="p">])</span>
+        <span class="n">count</span> <span class="o">+=</span> <span class="mi">1</span>
+    <span class="k">return</span> <span class="n">new_list</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">addPeople</span><span class="p">(</span><span class="n">names_list</span><span class="p">,</span> <span class="n">random_list</span><span class="p">))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>['Drew', 'Hayden', 'Sanburg', 'Nate', 'Jack']
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">random</span>
+<span class="n">score1</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">score2</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="k">def</span> <span class="nf">DiceGame</span><span class="p">():</span>
+    <span class="n">score1</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">6</span><span class="p">)</span> <span class="o">+</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">6</span><span class="p">)</span>
+    <span class="n">score2</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">6</span><span class="p">)</span> <span class="o">+</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">6</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">score1</span> <span class="o">&gt;</span> <span class="n">score2</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"Player 1 won game 1 with a score of "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">score1</span><span class="p">)</span> <span class="o">+</span> <span class="s2">" points!"</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">score1</span> <span class="o">&lt;</span> <span class="n">score2</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"Player 2 won game 2 with a score of "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">score2</span><span class="p">)</span> <span class="o">+</span> <span class="s2">" points!"</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">score1</span> <span class="o">==</span> <span class="n">score2</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"Both players tied with "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">score1</span><span class="p">)</span> <span class="o">+</span> <span class="s2">" points!"</span><span class="p">)</span>
+
+<span class="n">DiceGame</span><span class="p">()</span>
+<span class="n">DiceGame</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Player 1 won game 1 with a score of 6 points!
+Both players tied with 9 points!
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">random</span>
+
+<span class="c1"># defining constraints</span>
+<span class="n">width</span> <span class="o">=</span> <span class="mi">5</span>
+<span class="n">height</span> <span class="o">=</span> <span class="mi">5</span>
+<span class="n">obstacles</span> <span class="o">=</span> <span class="mi">12</span>
+
+<span class="c1"># creates the maze</span>
+<span class="n">maze</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">0</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">width</span><span class="p">)]</span> <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">height</span><span class="p">)]</span>
+
+<span class="c1"># for loop to generate obstacles</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">obstacles</span><span class="p">):</span>
+    <span class="n">x</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">width</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span>
+    <span class="n">y</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">height</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span>
+    <span class="n">maze</span><span class="p">[</span><span class="n">x</span><span class="p">][</span><span class="n">y</span><span class="p">]</span> <span class="o">=</span> <span class="s1">'x'</span> <span class="c1"># represents obstacles</span>
+
+<span class="c1"># function to create a start and end position</span>
+<span class="k">def</span> <span class="nf">startEnd</span><span class="p">():</span>
+    <span class="n">a</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">width</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span>
+    <span class="n">b</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">height</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span>
+    <span class="n">maze</span><span class="p">[</span><span class="n">a</span><span class="p">][</span><span class="n">b</span><span class="p">]</span> <span class="o">=</span> <span class="s1">'S'</span> <span class="c1"># represents the start position</span>
+    <span class="n">c</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">width</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span>
+    <span class="n">d</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">height</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span>
+    <span class="n">maze</span><span class="p">[</span><span class="n">c</span><span class="p">][</span><span class="n">d</span><span class="p">]</span> <span class="o">=</span> <span class="s1">'E'</span> <span class="c1"># represents the end position</span>
+
+<span class="n">startEnd</span><span class="p">()</span>
+
+<span class="c1"># function to print the maze</span>
+<span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">maze</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">' '</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">cell</span><span class="p">)</span> <span class="k">for</span> <span class="n">cell</span> <span class="ow">in</span> <span class="n">row</span><span class="p">))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>x S 0 x 0
+0 x 0 0 x
+0 0 0 E x
+0 x 0 0 x
+0 0 0 x x
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+</div>
+
+
+
+  </div><!-- from https://github.com/utterance/utterances -->
+<script src="https://utteranc.es/client.js"
+        repo="benjaminlee24/gang-ds-blog"
+        issue-term="title"
+        label="blogpost-comment"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script><a class="u-url" href="/gang-ds-blog/week%2015/2022/12/14/Unit-3-Sections-14-and-156.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/gang-ds-blog/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="/gang-ds-blog/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/gang-ds-blog/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <p>An easy to use blogging platform with support for Jupyter Notebooks.</p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"></ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
