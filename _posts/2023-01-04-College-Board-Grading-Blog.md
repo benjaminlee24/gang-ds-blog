@@ -15,3 +15,5 @@ title: College Board Grading Blog
 | Procedural Abstraction | 1 | 1 | This student met the requirements because they had all the necessary things such as a student procedure and described the functionality of the procedure. |
 | Algorithm Implementation | 1 | 1 | This student met the requirements because they had all the necessary things such as an algorithm in the procedure and explains the procedure with lots of details. |
 | Testing | 1 | 1 | This student met the requirements because they had all the necessary things such as it describes the two calls, describes the conditions, and identifies the results. |
+
+# Submission 2
