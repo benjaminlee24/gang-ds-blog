@@ -70,7 +70,7 @@ title: College Board Grading Blog
     <td>Data Abstraction</td>
     <td>1</td>
     <td>1</td>
-    <td>This student met the requirements because they had all the necessary things such as two code segments and all of the details.</td>
+    <td>This student met the requirements because they had all the necessary things such as two code segments and all of the details. Something else that I saw that was pretty above and beyond was that they added explanations within the code to make it easier to follow.</td>
   </tr>
   <tr>
     <td>Managing Complexity</td>
