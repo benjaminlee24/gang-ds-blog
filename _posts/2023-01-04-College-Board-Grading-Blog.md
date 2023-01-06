@@ -62,9 +62,9 @@ title: College Board Grading Blog
   </tr>
   <tr>
     <td>Program Purpose and Function</td>
+    <td>0</td>
     <td>1</td>
-    <td>1</td>
-    <td>I thought it had all of the requirements but looking how college board graded it, I realized that their purpose wasn't good. This means they get no points.</td>
+    <td>I gave it a 0 out of 1 because I thought that they didn't give a purpose. This is because I didn't see the word purpose in it and thought that the must have forgot it. Looking at how college board scored them however, it showed that they did have a purpose at the end of their first response.</td>
   </tr>
   <tr>
     <td>Data Abstraction</td>
