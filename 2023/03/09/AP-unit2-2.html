@@ -10,17 +10,17 @@
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Lab will perform alterations on images, manipulate RGB values, and reduce the number of pixels. College Board requires you to learn about Lossy and Lossless compression." />
 <meta property="og:description" content="Lab will perform alterations on images, manipulate RGB values, and reduce the number of pixels. College Board requires you to learn about Lossy and Lossless compression." />
-<link rel="canonical" href="https://benjaminlee24.github.io/gang-ds-blog/2023/03/08/AP-unit2-2.html" />
-<meta property="og:url" content="https://benjaminlee24.github.io/gang-ds-blog/2023/03/08/AP-unit2-2.html" />
+<link rel="canonical" href="https://benjaminlee24.github.io/gang-ds-blog/2023/03/09/AP-unit2-2.html" />
+<meta property="og:url" content="https://benjaminlee24.github.io/gang-ds-blog/2023/03/09/AP-unit2-2.html" />
 <meta property="og:site_name" content="Ben Lee’s Comp Sci Principles Blog" />
 <meta property="og:image" content="https://benjaminlee24.github.io/gang-ds-blog/images/python.png" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2023-03-08T00:00:00-06:00" />
+<meta property="article:published_time" content="2023-03-09T00:00:00-06:00" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta property="twitter:image" content="https://benjaminlee24.github.io/gang-ds-blog/images/python.png" />
 <meta property="twitter:title" content="Unit 2.2 Data Compression, Images" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-03-08T00:00:00-06:00","datePublished":"2023-03-08T00:00:00-06:00","description":"Lab will perform alterations on images, manipulate RGB values, and reduce the number of pixels. College Board requires you to learn about Lossy and Lossless compression.","headline":"Unit 2.2 Data Compression, Images","image":"https://benjaminlee24.github.io/gang-ds-blog/images/python.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://benjaminlee24.github.io/gang-ds-blog/2023/03/08/AP-unit2-2.html"},"url":"https://benjaminlee24.github.io/gang-ds-blog/2023/03/08/AP-unit2-2.html"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-03-09T00:00:00-06:00","datePublished":"2023-03-09T00:00:00-06:00","description":"Lab will perform alterations on images, manipulate RGB values, and reduce the number of pixels. College Board requires you to learn about Lossy and Lossless compression.","headline":"Unit 2.2 Data Compression, Images","image":"https://benjaminlee24.github.io/gang-ds-blog/images/python.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://benjaminlee24.github.io/gang-ds-blog/2023/03/09/AP-unit2-2.html"},"url":"https://benjaminlee24.github.io/gang-ds-blog/2023/03/09/AP-unit2-2.html"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/gang-ds-blog/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://benjaminlee24.github.io/gang-ds-blog/feed.xml" title="Ben Lee's Comp Sci Principles Blog" /><link rel="shortcut icon" type="image/x-icon" href="/gang-ds-blog/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
@@ -75,13 +75,13 @@ window.onload = wrap_img;
         <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">Unit 2.2 Data Compression, Images</h1><p class="page-description">Lab will perform alterations on images, manipulate RGB values, and reduce the number of pixels.  College Board requires you to learn about Lossy and Lossless compression.</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2023-03-08T00:00:00-06:00" itemprop="datePublished">
-        Mar 8, 2023
+    <h1 class="post-title p-name" itemprop="name headline">Unit 2.2 Data Compression, Images</h1><p class="page-description">Lab will perform alterations on images, manipulate RGB values, and reduce the number of pixels.  College Board requires you to learn about Lossy and Lossless compression.</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2023-03-09T00:00:00-06:00" itemprop="datePublished">
+        Mar 9, 2023
       </time>
        • <span class="read-time" title="Estimated read time">
     
     
-      10 min read
+      13 min read
     
 </span></p>
 
@@ -120,7 +120,12 @@ window.onload = wrap_img;
   <div class="post-content e-content" itemprop="articleBody">
     <ul id="toc" class="section-nav">
 <li class="toc-entry toc-h2"><a href="#Enumerate-"Data"-Big-Idea-from-College-Board">Enumerate &quot;Data&quot; Big Idea from College Board </a></li>
-<li class="toc-entry toc-h2"><a href="#Image-Files-and-Size">Image Files and Size </a></li>
+<li class="toc-entry toc-h2"><a href="#Image-Files-and-Size">Image Files and Size </a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#Describe-some-of-the-meta-data-and-considerations-when-managing-Image-files.">Describe some of the meta data and considerations when managing Image files. </a></li>
+<li class="toc-entry toc-h3"><a href="#Describe-how-these-relate-to-Data-Compression-...">Describe how these relate to Data Compression ... </a></li>
+</ul>
+</li>
 <li class="toc-entry toc-h2"><a href="#Displaying-images-in-Python-Jupyter-notebook">Displaying images in Python Jupyter notebook </a>
 <ul>
 <li class="toc-entry toc-h3"><a href="#IPython">IPython </a></li>
@@ -195,6 +200,25 @@ window.onload = wrap_img;
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Describe-some-of-the-meta-data-and-considerations-when-managing-Image-files.">
+<a class="anchor" href="#Describe-some-of-the-meta-data-and-considerations-when-managing-Image-files." aria-hidden="true"><span class="octicon octicon-link"></span></a>Describe some of the meta data and considerations when managing Image files.<a class="anchor-link" href="#Describe-some-of-the-meta-data-and-considerations-when-managing-Image-files."> </a>
+</h3>
+<p>Managing image files involves keeping track of various metadata and considerations to ensure that the images are organized, searchable, and accessible. Some of the most important meta data and considerations are file name conventions, file format, resolution and size, color space, metadata, keywords and tags, and backups.</p>
+<h3 id="Describe-how-these-relate-to-Data-Compression-...">
+<a class="anchor" href="#Describe-how-these-relate-to-Data-Compression-..." aria-hidden="true"><span class="octicon octicon-link"></span></a>Describe how these relate to Data Compression ...<a class="anchor-link" href="#Describe-how-these-relate-to-Data-Compression-..."> </a>
+</h3>
+<ul>
+<li>Different file types have different levels of compression. For example, JPEG is a lossy compression format that can achieve high compression rates, while PNG is a lossless compression format that preserves all the image data but has lower compression rates. Choosing the appropriate file type is important for balancing image quality and file size.</li>
+<li>The size of an image is determined by its height, width, and number of pixels. Larger images with more pixels require more storage space. Compression techniques can reduce the size of an image by removing some of the pixels or compressing the remaining data.</li>
+<li>The size of an image is determined by its height, width, and number of pixels. Larger images with more pixels require more storage space. Compression techniques can reduce the size of an image by removing some of the pixels or compressing the remaining data.</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Displaying-images-in-Python-Jupyter-notebook">
 <a class="anchor" href="#Displaying-images-in-Python-Jupyter-notebook" aria-hidden="true"><span class="octicon octicon-link"></span></a>Displaying images in Python Jupyter notebook<a class="anchor-link" href="#Displaying-images-in-Python-Jupyter-notebook"> </a>
 </h2>
@@ -213,16 +237,34 @@ window.onload = wrap_img;
 <blockquote>
 <p>File paths are different on Windows versus Mac and Linux.  This can cause problems in a project as you work and deploy on different Operating Systems (OS's), pathlib is a solution to this problem.</p>
 <ul>
-<li>What are commands you use in terminal to access files?</li>
-<li>What are the command you use in Windows terminal to access files?</li>
-<li>What are some of the major differences?</li>
+<li>What are commands you use in terminal to access files?<ul>
+<li>ls and cd are the main commands that I use in a terminal to access files</li>
+</ul>
+</li>
+<li>What are the command you use in Windows terminal to access files?<ul>
+<li>I am on mac, but if I was on Windows I would use wsl in a terminal to access files.</li>
+</ul>
+</li>
+<li>What are some of the major differences?<ul>
+<li>There are some major differences between mac and windows such as case sensitivity and file path format, but most of it is the same and with a little bit of practice it will be easy to go between the two.</li>
+</ul>
+</li>
 </ul>
 </blockquote>
 <p>Provide what you observed, struggled with, or leaned while playing with this code.</p>
 <ul>
-<li>Why is path a big deal when working with images?</li>
-<li>How does the meta data source and label relate to Unit 5 topics?</li>
-<li>Look up IPython, describe why this is interesting in Jupyter Notebooks for both Pandas and Images?</li>
+<li>Why is path a big deal when working with images?<ul>
+<li>The path is important when working with images because it specifies the location of the image file on the computer's file system. Without the correct path, an application or program will not be able to locate the image file and therefore will not be able to display or process the image.</li>
+</ul>
+</li>
+<li>How does the meta data source and label relate to Unit 5 topics?<ul>
+<li>The metadata source and label are relevant in Unit 5 topics because they provide additional information about the data that can be used to improve the performance of machine learning models. By leveraging the metadata, we can preprocess the data, identify patterns, and build more accurate models.</li>
+</ul>
+</li>
+<li>Look up IPython, describe why this is interesting in Jupyter Notebooks for both Pandas and Images?<ul>
+<li>IPython is an interactive shell that provides a rich set of tools and features for working with Python in an interactive environment. IPython provides a powerful tool for working with data in Jupyter Notebooks. Whether you're working with Pandas or images, IPython provides a more interactive and exploratory environment that can help you analyze and manipulate data more effectively.</li>
+</ul>
+</li>
 </ul>
 
 </div>
@@ -675,7 +717,7 @@ window.onload = wrap_img;
 
 
 
-  </div><a class="u-url" href="/gang-ds-blog/2023/03/08/AP-unit2-2.html" hidden></a>
+  </div><a class="u-url" href="/gang-ds-blog/2023/03/09/AP-unit2-2.html" hidden></a>
 </article>
 
       </div>
