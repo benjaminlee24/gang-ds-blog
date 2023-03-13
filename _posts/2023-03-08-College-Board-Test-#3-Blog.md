@@ -42,3 +42,6 @@ For this question I answered choice C, but choice B was the right answer because
 <img width="1434" alt="Screen Shot 2023-03-12 at 11 29 47 PM" src="https://user-images.githubusercontent.com/111550260/224624297-aa2a373e-caac-4620-9935-860a460f1611.png">
 
 For this question I answered choice A and C, but C isn't correct because random number generators can be used to simulate the variability that exists in the world, so results are not always the same. Validation of the results is usually accomplished by comparing the outcomes with those based on experimentation. This means that B is the other correct option because simulations are most useful when real-world events are impractical for experiments.
+
+# Reflection
+Overall this test was relatively straight forward, but some of the questions had Riggi and I stumped because of how long confusing the questions are. However, some of the coding questions we actually understood because working together with Riggi it was very easy to go through the code together and figure out either the problem or the output.
