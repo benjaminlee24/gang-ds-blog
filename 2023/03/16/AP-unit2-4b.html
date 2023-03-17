@@ -81,7 +81,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      5 min read
+      7 min read
     
 </span></p>
 
@@ -166,10 +166,22 @@ window.onload = wrap_img;
 <p>Uses PRAGMA statement to read schema.</p>
 </blockquote>
 <p>Describe Schema, here is resource <a href="https://www.sqlite.org/index.html">Resource</a>- What is a database schema?</p>
+
+<pre><code>- A database schema is the structure or blueprint that defines how data is organized in a database. It defines the tables, fields, relationships, and constraints of a database, and provides a clear and comprehensive view of the data model that an application or system uses to store and manage data.
+</code></pre>
 <ul>
-<li>What is the purpose of identity Column in SQL database?</li>
-<li>What is the purpose of a primary key in SQL database?</li>
-<li>What are the Data Types in SQL table?</li>
+<li>What is the purpose of identity Column in SQL database?<ul>
+<li>In SQL databases, an identity column is a special type of column that automatically generates unique numeric values for each row that is inserted into a table. The purpose of an identity column is to provide a unique identifier for each row in the table, without requiring the user to manually enter a value for that column.</li>
+</ul>
+</li>
+<li>What is the purpose of a primary key in SQL database?<ul>
+<li>In SQL databases, a primary key is a column or set of columns that uniquely identifies each row in a table. The purpose of a primary key is to ensure that each row in the table can be uniquely identified and retrieved, and that the data in the table is organized and structured in a consistent and efficient manner.</li>
+</ul>
+</li>
+<li>What are the Data Types in SQL table?<ul>
+<li>Some example types are booleans, blob, string, integer, and binary.</li>
+</ul>
+</li>
 </ul>
 
 </div>
@@ -211,6 +223,24 @@ window.onload = wrap_img;
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>(0, 'id', 'INTEGER', 1, None, 1)
+(1, '_name', 'VARCHAR(255)', 1, None, 0)
+(2, '_uid', 'VARCHAR(255)', 1, None, 0)
+(3, '_password', 'VARCHAR(255)', 1, None, 0)
+(4, '_dob', 'DATE', 0, None, 0)
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
     
 
@@ -224,7 +254,10 @@ window.onload = wrap_img;
 <p>Uses SQL SELECT statement to read data</p>
 </blockquote>
 <ul>
-<li>What is a connection object?  After you google it, what do you think it does?</li>
+<li>What is a connection object?  After you google it, what do you think it does?<ul>
+<li>A connection object is an object that represents a connection to a database or other data source. It is used to establish a connection between an application and a database, and to manage that connection throughout the lifetime of the application.</li>
+</ul>
+</li>
 <li>Same for cursor object?</li>
 <li>Look at conn object and cursor object in VSCode debugger.  What attributes are in the object?</li>
 <li>Is "results" an object?  How do you know?</li>
@@ -257,6 +290,8 @@ window.onload = wrap_img;
         <span class="nb">print</span><span class="p">(</span><span class="s2">"Table is empty"</span><span class="p">)</span>
     <span class="k">else</span><span class="p">:</span>
         <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">results</span><span class="p">:</span>
+
+
             <span class="nb">print</span><span class="p">(</span><span class="n">row</span><span class="p">)</span>
 
     <span class="c1"># Close the cursor and connection objects</span>
@@ -267,6 +302,25 @@ window.onload = wrap_img;
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>(1, 'Thomas Edison', 'toby', 'sha256$cK3QKp8T9ZIj612M$549688ff5052bd411970e0979fef40ce3541ba4b4f032347d6ba667b0ec5f763', '1847-02-11')
+(2, 'Nikola Tesla', 'niko', 'sha256$OYYXHXz8vQSg1Ev2$faa73af96f5bfa82f66be5887b4737289a0681709cdbf70ac03c901baacef124', '2023-03-15')
+(3, 'Alexander Graham Bell', 'lex', 'sha256$5Azjop5Vw7LTgmgm$d9465f2ed8e81808678308c3d22b36b4c977815e99408870a516fbe5c04e64d8', '2023-03-15')
+(4, 'Eli Whitney', 'whit', 'sha256$DVAc5UYyEXcLWInh$28c0af8f464d3a66df09e2f65d94b93bf63be36fd149b7277f5ba6b9639cccfd', '2023-03-15')
+(5, 'Indiana Jones', 'indi', 'sha256$KPGfoMPb5pX21rCr$49af576cb0e1ed21535a4d2f42218c75e75457bf4a8a90c2f3673dd380c86b5e', '1920-10-21')
+(6, 'Marion Ravenwood', 'raven', 'sha256$kKqBw4YVxjopW6oa$8d00639895a589c86681a46b925071f04d5cd22f83133e836bfde945188c0525', '1921-10-21')
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -327,10 +381,24 @@ window.onload = wrap_img;
     <span class="n">cursor</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
     <span class="n">conn</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
     
-<span class="c1">#create()</span>
+<span class="n">create</span><span class="p">()</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>A new user record benlee2 has been created
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -396,10 +464,24 @@ window.onload = wrap_img;
     <span class="n">cursor</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
     <span class="n">conn</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
     
-<span class="c1">#update()</span>
+<span class="n">update</span><span class="p">()</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>The row with user id benlee2 the password has been successfully updated
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -516,6 +598,27 @@ window.onload = wrap_img;
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>(1, 'Thomas Edison', 'toby', 'sha256$cK3QKp8T9ZIj612M$549688ff5052bd411970e0979fef40ce3541ba4b4f032347d6ba667b0ec5f763', '1847-02-11')
+(2, 'Nikola Tesla', 'niko', 'sha256$OYYXHXz8vQSg1Ev2$faa73af96f5bfa82f66be5887b4737289a0681709cdbf70ac03c901baacef124', '2023-03-15')
+(3, 'Alexander Graham Bell', 'lex', 'sha256$5Azjop5Vw7LTgmgm$d9465f2ed8e81808678308c3d22b36b4c977815e99408870a516fbe5c04e64d8', '2023-03-15')
+(4, 'Eli Whitney', 'whit', 'sha256$DVAc5UYyEXcLWInh$28c0af8f464d3a66df09e2f65d94b93bf63be36fd149b7277f5ba6b9639cccfd', '2023-03-15')
+(5, 'Indiana Jones', 'indi', 'sha256$KPGfoMPb5pX21rCr$49af576cb0e1ed21535a4d2f42218c75e75457bf4a8a90c2f3673dd380c86b5e', '1920-10-21')
+(6, 'Marion Ravenwood', 'raven', 'sha256$kKqBw4YVxjopW6oa$8d00639895a589c86681a46b925071f04d5cd22f83133e836bfde945188c0525', '1921-10-21')
+(7, 'Ben', 'benlee2', 'ganggang', '')
+(8, '', '', '', '')
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
