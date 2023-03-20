@@ -81,7 +81,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      7 min read
+      9 min read
     
 </span></p>
 
@@ -258,9 +258,18 @@ window.onload = wrap_img;
 <li>A connection object is an object that represents a connection to a database or other data source. It is used to establish a connection between an application and a database, and to manage that connection throughout the lifetime of the application.</li>
 </ul>
 </li>
-<li>Same for cursor object?</li>
-<li>Look at conn object and cursor object in VSCode debugger.  What attributes are in the object?</li>
-<li>Is "results" an object?  How do you know?</li>
+<li>Same for cursor object?<ul>
+<li>After reading what it is on Google, I believe that it process each row that are queued in the database, and thats how it reads it in order to display the results.</li>
+</ul>
+</li>
+<li>Look at conn object and cursor object in VSCode debugger.  What attributes are in the object?<ul>
+<li>Attributes in conn are create, menu, read, schema, database, file, ipykernel, os, sqlite3 and sys. Attributes in cursor are conn, create, meny, read, schema, database, file, ipykernel, os, sqlite3, sys.</li>
+</ul>
+</li>
+<li>Is "results" an object?  How do you know?<ul>
+<li>Results is an object because an object has functions and data, which is what is shown when we debug it and look at the results, there are special variables, function variables, etc.</li>
+</ul>
+</li>
 </ul>
 
 </div>
@@ -336,8 +345,14 @@ window.onload = wrap_img;
 <blockquote>
 <p>Uses SQL INSERT to add row</p>
 <ul>
-<li>Compore create() in both SQL lessons.  What is better or worse in the two implementations?</li>
-<li>Explain purpose of SQL INSERT.   Is this the same as User <strong>init</strong>?</li>
+<li>Compore create() in both SQL lessons.  What is better or worse in the two implementations?<ul>
+<li>The 2.4a lesson does create by has try and excepts for each one individually, while this one lists all the things being created then has the try and except functions after. Im not to sure what is better or worse, but I think that off of looks that this cell below seems better when trying to create a lot of things at once.</li>
+</ul>
+</li>
+<li>Explain purpose of SQL INSERT.   Is this the same as User <strong>init</strong>?<ul>
+<li>The purpose fo SQL insert is to add new data into the database, I think it is because user init initializes the data meaning it assigns an initial value for a variable or data object. However I think init should be used to make the dataset then insert should be just strictly for adding new data in.</li>
+</ul>
+</li>
 </ul>
 </blockquote>
 
@@ -414,9 +429,18 @@ window.onload = wrap_img;
 <blockquote>
 <p>Uses SQL UPDATE to modify password</p>
 <ul>
-<li>What does the hacked part do?</li>
-<li>Explain try/except, when would except occur?</li>
-<li>What code seems to be repeated in each of these examples to point, why is it repeated?</li>
+<li>What does the hacked part do?<ul>
+<li>I think that hacked part helps towards encrypting the password so it is not as easily accessible.</li>
+</ul>
+</li>
+<li>Explain try/except, when would except occur?<ul>
+<li>Try would happen when a user wants to reset or make new password, I think except would occur if the problem was not that no user id has been found or row for password was changed, bur not entirely sure exactly what the problem would be for this to happen.</li>
+</ul>
+</li>
+<li>What code seems to be repeated in each of these examples to point, why is it repeated?<ul>
+<li>It seems to be close cursor or connection, I think it is done so that it finishes processing, therefore results can be displayed.</li>
+</ul>
+</li>
 </ul>
 </blockquote>
 
@@ -497,8 +521,14 @@ window.onload = wrap_img;
 <blockquote>
 <p>Uses a delete function to remove a user based on a user input of the id.</p>
 <ul>
-<li>Is DELETE a dangerous operation?  Why?</li>
-<li>In the print statemements, what is the "f" and what does {uid} do?</li>
+<li>Is DELETE a dangerous operation?  Why?<ul>
+<li>It is not dangerous because deleting is part of the process of data if things are put incorrectly, and you can always input new data anyways.</li>
+</ul>
+</li>
+<li>In the print statemements, what is the "f" and what does {uid} do?<ul>
+<li>I think f find the userid, the bracket uid displays that certain uid found</li>
+</ul>
+</li>
 </ul>
 </blockquote>
 
@@ -558,8 +588,14 @@ window.onload = wrap_img;
 <blockquote>
 <p>CRUD and Schema interactions from one location by running menu. Observe input at the top of VSCode, observe output underneath code cell.</p>
 <ul>
-<li>Why does the menu repeat?</li>
-<li>Could you refactor this menu?  Make it work with a List?</li>
+<li>Why does the menu repeat?<ul>
+<li>Menu repeats because it is the main thing that connects you to CRUD or S.</li>
+</ul>
+</li>
+<li>Could you refactor this menu?  Make it work with a List?<ul>
+<li>I am not entirely sure, but it does sound possible.</li>
+</ul>
+</li>
 </ul>
 </blockquote>
 
