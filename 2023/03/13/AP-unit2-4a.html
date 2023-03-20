@@ -81,7 +81,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      8 min read
+      10 min read
     
 </span></p>
 
@@ -183,8 +183,10 @@ window.onload = wrap_img;
 </blockquote>
 <ul>
 <li>Comment on where you have observed these working?  Provide a defintion of purpose.<ol>
-<li>Flask app object</li>
-<li>SQLAlchemy db object</li>
+<li>Flask app object
+The flask object implements a WSGI application and acts as the central object. It is passed the name of the module or package of the application. Once it is created it will act as a central registry for the view functions, the URL rules, template configuration and much more.</li>
+<li>SQLAlchemy db object
+SQLAlchemy is a library that facilitates the communication between Python programs and databases. Most of the times, this library is used as an Object Relational Mapper (ORM) tool that translates Python classes to tables on relational databases and automatically converts function calls to SQL statements.</li>
 </ol>
 </li>
 </ul>
@@ -246,7 +248,10 @@ window.onload = wrap_img;
 <li>Often called a template, in this case it is a template definition for the property User</li>
 </ul>
 </li>
-<li>db.Model inheritance</li>
+<li>db.Model inheritance<ul>
+<li>When we create the logical model, we can apply the concept of inheritance to represent the idea that an entity (often called the child entity) is derived (i.e. it inherits) from another entity (the parent entity).</li>
+</ul>
+</li>
 <li>
 <em>init</em> method<ul>
 <li>Works automatically and receives parameters which instantiates it</li>
@@ -434,9 +439,18 @@ window.onload = wrap_img;
 </blockquote>
 <ul>
 <li>Comment on how these work?<ol>
-<li>Create All Tables from db Object</li>
-<li>User Object Constructors</li>
-<li>Try / Except </li>
+<li>Create All Tables from db Object<ul>
+<li>db Object is organized in a structured manner. Create All tables creates the table.</li>
+</ul>
+</li>
+<li>User Object Constructors<ul>
+<li>User object constructors ensures model users are consistent and be used various of times.</li>
+</ul>
+</li>
+<li>Try / Except<ul>
+<li>This accounts for error. </li>
+</ul>
+</li>
 </ol>
 </li>
 </ul>
@@ -518,10 +532,16 @@ Created new uid raven
 <blockquote>
 <p>Use of ORM Query object and custom methods to identify user to credentials uid and password</p>
 <ul>
-<li>ORM = Object Relational Model </li>
+<li>ORM = Object Relational Model - in SQLAlchemy, ORM on top of the python that works with databases.</li>
 <li>Comment on purpose of following<ol>
-<li>User.query.filter_by</li>
-<li>user.password</li>
+<li>User.query.filter_by<ul>
+<li>Filters with the parameter, parameter is uid, so it filters by the username ids.</li>
+</ul>
+</li>
+<li>user.password<ul>
+<li>Checks to see if the password is correct, if yes, returns true, is not, returns false</li>
+</ul>
+</li>
 </ol>
 </li>
 </ul>
@@ -573,10 +593,22 @@ Created new uid raven
 </blockquote>
 <ul>
 <li>Comment on purpose of following<ol>
-<li>user.find_by_uid() and try/except</li>
-<li>user = User(...)</li>
-<li>user.dob and try/except</li>
-<li>user.create() and try/except</li>
+<li>user.find_by_uid() and try/except<ul>
+<li>User find by uid finds user by their usernames, checks through usernames until matches the same one input, if not, it passes or keeps going.</li>
+</ul>
+</li>
+<li>user = User(...)<ul>
+<li>This initializes the user object before date, getting the name, uid, and password first.</li>
+</ul>
+</li>
+<li>user.dob and try/except<ul>
+<li>Enter user's date of birth, looks for one that matches with the try function, if not, goes to except with keeps going through all, if none can be found then it prints invalid date.</li>
+</ul>
+</li>
+<li>user.create() and try/except<ul>
+<li>Creates a new user for the data base, if try works the prints new user was created, except will happen if error occurred while creating new user.</li>
+</ul>
+</li>
 </ol>
 </li>
 </ul>
@@ -677,8 +709,14 @@ Created new uid raven
 </blockquote>
 <ul>
 <li>Comment on purpose of following<ol>
-<li>User.query.all</li>
-<li>json_ready assignment, google List Comprehension</li>
+<li>User.query.all<ul>
+<li>This is extracting all users from database and turns them into JSON, the user query all queues all users to read them.</li>
+</ul>
+</li>
+<li>json_ready assignment, google List Comprehension<ul>
+<li>Believe that it comprehends each user reading it, then adding it to the list.</li>
+</ul>
+</li>
 </ol>
 </li>
 </ul>
