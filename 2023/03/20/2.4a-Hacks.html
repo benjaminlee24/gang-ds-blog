@@ -169,7 +169,7 @@ window.onload = wrap_img;
 <span class="s2">                                    ); """</span>
     <span class="n">connection</span> <span class="o">=</span> <span class="n">create_connection</span><span class="p">(</span><span class="n">database</span><span class="p">)</span>
 
-    <span class="c1"># create books table</span>
+    <span class="c1"># create basketball table</span>
     <span class="k">if</span> <span class="n">connection</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
         <span class="n">create_table</span><span class="p">(</span><span class="n">connection</span><span class="p">,</span> <span class="n">createTblSql</span><span class="p">)</span>
     <span class="k">else</span><span class="p">:</span>
@@ -241,7 +241,7 @@ window.onload = wrap_img;
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>New basketball with Jordan Poole is added.
+<pre>New basketball with Darius Garland is added.
 </pre>
 </div>
 </div>
@@ -304,7 +304,7 @@ window.onload = wrap_img;
 <pre>(1, 'Kobe Bryant', 'Lakers', 'SG', 'The greatest of all time!')
 (2, 'Kobe Bryant', 'Lakers', 'Sg', 'Better than Lebron')
 (3, 'Austin Reaves', 'Lakers', 'Sg', 'Best white boy in the NBA')
-(4, 'Jordan Poole', 'Warriors', 'Pg', 'Lowkey Sexy')
+(4, 'Darius Garland', 'Cavs', 'Pg', 'Top 15 Pg')
 </pre>
 </div>
 </div>
@@ -373,7 +373,7 @@ window.onload = wrap_img;
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Review for the basketball is updated to He's lowkey sexy
+<pre>Review for the basketball is updated to Top 10 Pg
 </pre>
 </div>
 </div>
@@ -416,7 +416,7 @@ window.onload = wrap_img;
         <span class="k">if</span> <span class="n">cursor</span><span class="o">.</span><span class="n">rowcount</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
             <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">basketballId</span><span class="si">}</span><span class="s2"> does not exist"</span><span class="p">)</span>
         <span class="k">else</span><span class="p">:</span>
-            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Successfully deleted book with id </span><span class="si">{</span><span class="n">basketballId</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Successfully deleted basketball with id </span><span class="si">{</span><span class="n">basketballId</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
         <span class="n">connection</span><span class="o">.</span><span class="n">commit</span><span class="p">()</span>
     <span class="k">except</span> <span class="n">sqlite3</span><span class="o">.</span><span class="n">Error</span> <span class="k">as</span> <span class="n">error</span><span class="p">:</span>
         <span class="nb">print</span><span class="p">(</span><span class="s2">"Error occurred: "</span><span class="p">,</span> <span class="n">error</span><span class="p">)</span>
@@ -438,7 +438,7 @@ window.onload = wrap_img;
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Successfully deleted book with id 4
+<pre>Successfully deleted basketball with id 4
 </pre>
 </div>
 </div>
