@@ -124,9 +124,9 @@ The "network" layer is responsible for ***routing data packets between networks*
 Fault tolerance is a process that lets an OS respond to failure in the hardware or software. So the system won’t break down completely due to an error or failure.
 
 ### Parallel and Distributed Computing
-> Review previous lecture on Parallel Computing and watch Daily vidoe 4.3.  Think of ways to make something in you team project to utilize Cores more effectively.  Here are some thoughts to add to your story of Computers and Networks...
+> Review previous lecture on Parallel Computing and watch Daily video 4.3.  Think of ways to make something in you team project to utilize Cores more effectively.  Here are some thoughts to add to your story of Computers and Networks...
 
-- What is naturally Distributed in Frontend/Backend archeticture?  
+- What is naturally Distributed in Frontend/Backend architecture?  
 
 - Analyze this command in Docker: ```ENV GUNICORN_CMD_ARGS="--workers=1 --bind=0.0.0.0:8086"```.   Determine if there is options are options in this command for parallel computing within the server that runs python/gunicorn.  Here is an [article](https://medium.com/building-the-system/gunicorn-3-means-of-concurrency-efbb547674b7)
 
