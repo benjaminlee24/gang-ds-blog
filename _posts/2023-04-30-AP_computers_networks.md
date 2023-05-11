@@ -48,7 +48,7 @@ Inspect Variables: see the values on the variables to debug and see what is happ
     - A computer network is a type of computing system. 
     - A path between two computing devices on a computer network (a sender and a receiver) is a sequence of directly connected computing devices that begins at the sender and ends at the receiver.
     - Routing is the process of finding a path from sender to receiver.
-    - The bandwidth of a computer network is the maximum amount of data that can be sent in a fixed amount of time.
+    - The bandwidth of a computer network is the maximum amount of data that can be sent in a certain amount of time.
     - Bandwidth is usually measured in bits per second
 
 - Complete Vocabulary Matching Activity.  Incorporate this into your learnings from year.  To analyze measure path and latency use `traceroute` and `ping` commands from Linux Terminal.  
@@ -91,7 +91,7 @@ Computer Network –> A computer network is a group of interconnected computing 
 <img width="518" alt="Screen Shot 2023-05-01 at 12 03 53 PM" src="https://user-images.githubusercontent.com/111466901/235512168-66a596ae-4142-4c3e-a980-87ddeb58fe83.png">
 
 
-- Often we draw pictures of machines communicating over the Internet with arrows.  However, the real communication goes through protocol layers and the machine and then is trasported of the network.   For College Board and future Computer Knowledge you should become familiar with the following ...
+- Often we draw pictures of machines communicating over the Internet with arrows.  However, the real communication goes through protocol layers and the machine and then is transported from the network.   For College Board and future Computer Knowledge you should become familiar with the following ...
 
 ```
      User Machine  <---> Frontend Server <---> Backend Server
